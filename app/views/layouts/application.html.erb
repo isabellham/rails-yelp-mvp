@@ -12,6 +12,12 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+          <%= link_to "All Restaurants", restaurants_path, class: "btn btn-sm btn-outline-secondary" %>
+          <%= link_to "Create Restaurant", new_restaurant_path, class: "btn btn-sm btn-outline-secondary" %>
+      </form>
+    </nav>
     <%= yield %>
   </body>
 </html>

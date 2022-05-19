@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center">
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.label :name %>
+  <%= f.input :name, label: false, input_html: { class: 'mb-2' } %>
+  <%= f.label :address %>
+  <%= f.input :address, label: false, input_html: { class: 'mb-2' } %>
+  <%= f.label :phone_number %>
+  <%= f.input :phone_number, label: false, input_html: { class: 'mb-2' } %>
+  <%= f.label :category %>
+  <%= f.input :category, label: false, input_html: { class: 'mb-2' } %>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+<% end %>
+</div>
